@@ -12,6 +12,43 @@
     <url>http://www.ow2.org</url>
   </organization>
 
+  <licenses>
+      <license>
+          <name>GNU Lesser General Public License v3.0</name>
+          <url>https://github.com/gibello/ow2-stamp-descartes-git/blob/master/LICENSE</url>
+      </license>
+  </licenses>
+
+  <issueManagement>
+      <system>GitHub</system>
+      <url>https://github.com/gibello/ow2-stamp-descartes-git/issues</url>
+  </issueManagement>
+
+  <developers>
+      <developer>
+          <name>Pierre-Yves Gibello</name>
+          <email>pyg@ow2.org</email>
+      </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com:gibello/ow2-stamp-descartes-git.git</connection>
+    <developerConnection>scm:git:git@github.com:gibello/ow2-stamp-descartes-git.git</developerConnection>
+    <url>https://github.com/gibello/ow2-stamp-descartes-git</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <distributionManagement>
+    <snapshotRepository>
+        <id>ossrh-snapshots</id>
+        <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+    </snapshotRepository>
+    <repository>
+        <id>ossrh</id>
+        <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <pitest.version>1.4.7</pitest.version>
