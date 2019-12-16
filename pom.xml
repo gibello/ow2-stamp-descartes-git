@@ -1,11 +1,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <parent>
+    <artifactId>ow2</artifactId>
+    <groupId>org.ow2</groupId>
+    <version>1.5</version>
+  </parent>
+
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.ow2.infra</groupId>
   <artifactId>ow2-stamp-descartes-git</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
+
+  <name>Git(lab) issues generator for Descartes mutation testing tool</name>
+  <description>Adds a Git(lab) issue output format to Pitest/Descartes mutation testing tool.</description>
+  <url>https://github.com/gibello/ow2-stamp-descartes-git</url>
 
   <organization>
     <name>OW2</name>
@@ -37,17 +48,6 @@
     <url>https://github.com/gibello/ow2-stamp-descartes-git</url>
     <tag>HEAD</tag>
   </scm>
-
-  <distributionManagement>
-    <snapshotRepository>
-        <id>ossrh-snapshots</id>
-        <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-    </snapshotRepository>
-    <repository>
-        <id>ossrh</id>
-        <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
-  </distributionManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -150,25 +150,6 @@
                       <groupId>org.apache.maven.plugins</groupId>
                       <artifactId>maven-javadoc-plugin</artifactId>
                       <version>3.1.1</version>
-                  </plugin>
-
-                  <plugin>
-                      <groupId>org.sonatype.plugins</groupId>
-                      <artifactId>nexus-staging-maven-plugin</artifactId>
-                      <version>1.6.8</version>
-                      <extensions>true</extensions>
-                      <configuration>
-                          <serverId>ossrh</serverId>
-                          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                          <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                      </configuration>
-                      <dependencies>
-                          <dependency>
-                              <groupId>org.apache.maven.wagon</groupId>
-                              <artifactId>wagon-ssh</artifactId>
-                              <version>3.3.3</version>
-                          </dependency>
-                      </dependencies>
                   </plugin>
 
                   <plugin>
