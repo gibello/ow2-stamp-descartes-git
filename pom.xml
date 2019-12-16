@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <parent>
     <artifactId>ow2</artifactId>
@@ -11,7 +10,7 @@
 
   <groupId>org.ow2.infra</groupId>
   <artifactId>ow2-stamp-descartes-git</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>jar</packaging>
 
   <name>Git(lab) issues generator for Descartes mutation testing tool</name>
@@ -43,10 +42,10 @@
   </developers>
 
   <scm>
-    <connection>scm:git:git://github.com:gibello/ow2-stamp-descartes-git.git</connection>
+    <connection>scm:git:ssh://github.com:gibello/ow2-stamp-descartes-git.git</connection>
     <developerConnection>scm:git:git@github.com:gibello/ow2-stamp-descartes-git.git</developerConnection>
     <url>https://github.com/gibello/ow2-stamp-descartes-git</url>
-    <tag>HEAD</tag>
+    <tag>ow2-stamp-descartes-git-1.0.0</tag>
   </scm>
 
   <properties>
