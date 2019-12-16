@@ -10,7 +10,7 @@
 
   <groupId>org.ow2.infra</groupId>
   <artifactId>ow2-stamp-descartes-git</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>Git(lab) issues generator for Descartes mutation testing tool</name>
@@ -42,7 +42,7 @@
   </developers>
 
   <scm>
-    <connection>scm:git:ssh://github.com:gibello/ow2-stamp-descartes-git.git</connection>
+    <connection>scm:git:ssh://git@github.com/gibello/ow2-stamp-descartes-git.git</connection>
     <developerConnection>scm:git:git@github.com:gibello/ow2-stamp-descartes-git.git</developerConnection>
     <url>https://github.com/gibello/ow2-stamp-descartes-git</url>
     <tag>ow2-stamp-descartes-git-1.0.0</tag>
