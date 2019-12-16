@@ -10,7 +10,7 @@
 
   <groupId>org.ow2.infra</groupId>
   <artifactId>ow2-stamp-descartes-git</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>Git(lab) issues generator for Descartes mutation testing tool</name>
