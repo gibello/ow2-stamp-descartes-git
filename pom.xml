@@ -50,8 +50,8 @@
 
   <distributionManagement>
    <repository>
-      <id>ow2-release</id>
-      <url>https://repository.ow2.org/nexus/content/repositories/releases/</url>
+      <id>ow2.release</id>
+      <url>https://repository.ow2.org/nexus/service/local/staging/deploy/maven2/</url>
    </repository>
   </distributionManagement>
 
