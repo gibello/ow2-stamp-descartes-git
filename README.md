@@ -31,7 +31,7 @@ Example of Descartes plugin configuration to enable GITLAB-ISSUE output:
       <dependency>
         <groupId>org.ow2.infra</groupId>
         <artifactId>ow2-stamp-descartes-git</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
       </dependency>
     </dependencies>
     <!--
