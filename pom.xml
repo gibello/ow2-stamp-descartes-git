@@ -130,89 +130,11 @@
           <configuration>
             <tagNameFormat>ow2-stamp-descartes-git-@{version}</tagNameFormat>
             <autoVersionSubmodules>true</autoVersionSubmodules>
-            <releaseProfiles>release</releaseProfiles>
           </configuration>
          </plugin>
       </plugins>
     </pluginManagement>
   </build>
 
-  <profiles>
-    <profile>
-      <id>release</id>
-      <!-- This profile should be used for release actions -->
-      <!--
-         Having a dedicated profile avoids, among other things, the need
-         for a gpg key when installing from source code.
-      -->
-      <build>
-        <plugins>
-
-          <plugin>
-            <groupId>org.sonatype.plugins</groupId>
-            <artifactId>nexus-staging-maven-plugin</artifactId>
-            <version>1.6.8</version>
-            <executions>
-              <execution>
-                <id>default-deploy</id>
-                <phase>deploy</phase>
-                <goals>
-                  <goal>deploy</goal>
-                </goals>
-              </execution>
-            </executions>
-            <configuration>
-              <serverId>ow2.release</serverId>
-              <nexusUrl>https://repository.ow2.org/nexus/service/local/staging/deploy/maven2</nexusUrl>
-              <stagingProfileId>69bbaf6e9200f8</stagingProfileId>
-            </configuration>
-          </plugin>
-
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-source-plugin</artifactId>
-            <version>2.2.1</version>
-            <executions>
-              <execution>
-                <id>attach-sources</id>
-                <goals>
-                  <goal>jar-no-fork</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-javadoc-plugin</artifactId>
-            <version>3.1.1</version>
-            <executions>
-              <execution>
-                <id>attach-javadocs</id>
-                <goals>
-                  <goal>jar</goal>
-                </goals>
-              </execution>
-            </executions> 
-          </plugin>
-
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-gpg-plugin</artifactId>
-            <version>1.6</version>
-            <executions>
-              <execution>
-                <id>sign-artifacts</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
-
 </project>
+
