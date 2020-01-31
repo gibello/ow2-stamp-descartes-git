@@ -1,3 +1,11 @@
+===================================================================================
+# WARNING: PROJECT MOVED TO OW2 GITLAB (no more update here after release 1.0.1)
+
+See https://gitlab.ow2.org/ow2-platform/ow2-stamp-descartes-git for latest version.
+
+# DOCUMENTATION OF RELEASE 1.0.1 BELOW
+====================================================================================
+
 # OW2 stamp/descartes git(lab) issue generator
 
 This project extends the pitmp-maven-plugin, to generate Gitlab issues out of mutation testing:
